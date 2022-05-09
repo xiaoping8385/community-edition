@@ -84,7 +84,7 @@ kpack:
   kp_default_repository_username:
   kp_default_repository_password:
 
-cartographer-catalog:
+cartographer_catalog:
     registry:
         server:
         repository:
@@ -122,7 +122,7 @@ kpack:
   kp_default_repository_username: my-dockerhub-username
   kp_default_repository_password: my-dockerhub-password
 
-cartographer-catalog:
+cartographer_catalog:
   registry:
       server: index.docker.io
       repository: my-dockerhub-username
