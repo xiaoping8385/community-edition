@@ -1,0 +1,53 @@
+---
+apiVersion: imgpkg.carvel.dev/v1alpha1
+images:
+- annotations:
+    kbld.carvel.dev/id: mcr.microsoft.com/k8s/csi/azuredisk-csi:v1.18.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v1.18.0
+          url: mcr.microsoft.com/k8s/csi/azuredisk-csi:v1.18.0
+  image: mcr.microsoft.com/k8s/csi/azuredisk-csi@sha256:8ec90a94153113281a7dd5e9fcdcc98fdd9586ac674bd78a83349139ea9d2333
+- annotations:
+    kbld.carvel.dev/id: mcr.microsoft.com/oss/kubernetes-csi/csi-attacher:v3.4.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v3.4.0
+          url: mcr.microsoft.com/oss/kubernetes-csi/csi-attacher:v3.4.0
+  image: mcr.microsoft.com/oss/kubernetes-csi/csi-attacher@sha256:19fbca01394f7ed80151731180cfde0a3367f038beae2a97cda7928034010057
+- annotations:
+    kbld.carvel.dev/id: mcr.microsoft.com/oss/kubernetes-csi/csi-node-driver-registrar:v2.5.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v2.5.0
+          url: mcr.microsoft.com/oss/kubernetes-csi/csi-node-driver-registrar:v2.5.0
+  image: mcr.microsoft.com/oss/kubernetes-csi/csi-node-driver-registrar@sha256:348b2d4eebc8da38687755a69b6c21035be232325a6bcde54e5ec4e04689fd93
+- annotations:
+    kbld.carvel.dev/id: mcr.microsoft.com/oss/kubernetes-csi/csi-provisioner:v3.1.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v3.1.0
+          url: mcr.microsoft.com/oss/kubernetes-csi/csi-provisioner:v3.1.0
+  image: mcr.microsoft.com/oss/kubernetes-csi/csi-provisioner@sha256:542c9258a1441e4927883ea73425e21f9a14043a649686bf6b51700f34c64f8e
+- annotations:
+    kbld.carvel.dev/id: mcr.microsoft.com/oss/kubernetes-csi/csi-resizer:v1.4.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v1.4.0
+          url: mcr.microsoft.com/oss/kubernetes-csi/csi-resizer:v1.4.0
+  image: mcr.microsoft.com/oss/kubernetes-csi/csi-resizer@sha256:ab6c2e18a4d943f2bf8688e1779622277a1d14c355c9d4bfc0d761d86c5108b3
+- annotations:
+    kbld.carvel.dev/id: mcr.microsoft.com/oss/kubernetes-csi/csi-snapshotter:v5.0.1
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v5.0.1
+          url: mcr.microsoft.com/oss/kubernetes-csi/csi-snapshotter:v5.0.1
+  image: mcr.microsoft.com/oss/kubernetes-csi/csi-snapshotter@sha256:a889e925e15f9423f7842f1b769f64cbcf6a20b6956122836fc835cf22d9073f
+- annotations:
+    kbld.carvel.dev/id: mcr.microsoft.com/oss/kubernetes-csi/livenessprobe:v2.6.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v2.6.0
+          url: mcr.microsoft.com/oss/kubernetes-csi/livenessprobe:v2.6.0
+  image: mcr.microsoft.com/oss/kubernetes-csi/livenessprobe@sha256:e01f5dae19d7e1be536606fe5deb893417429486b628b816d80ffa0e441eeae8
+kind: ImagesLock

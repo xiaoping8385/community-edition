@@ -1,0 +1,25 @@
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: Package
+metadata:
+  name: azuredisk-csi.community.tanzu.vmware.com.1.18.0
+spec:
+  refName: azuredisk-csi.community.tanzu.vmware.com
+  version: 1.18.0
+  releaseNotes: "azuredisk version 1.18.0"
+  licenses:
+    - "Apache 2.0"
+  template:
+    spec:
+      fetch:
+        - imgpkgBundle:
+            image: index.docker.io/pingvmware/azuredisk-csi@sha256:fd5c1b01e1dc8f4d52b03be52de0bc0a11eb0169dd82086ec400bbf108ff25d6
+      template:
+        - ytt:
+            paths:
+              - config/
+        - kbld:
+            paths:
+              - "-"
+              - .imgpkg/images.yml
+      deploy:
+        - kapp: {}

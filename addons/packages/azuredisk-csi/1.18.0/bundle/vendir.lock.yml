@@ -1,0 +1,11 @@
+apiVersion: vendir.k14s.io/v1alpha1
+directories:
+- contents:
+  - git:
+      commitTitle: 'doc: cut v1.18.0 release'
+      sha: b30b29a445c878ef5b860acf9fd6d1a452f0483e
+      tags:
+      - v1.18.0
+    path: .
+  path: config/upstream
+kind: LockConfig

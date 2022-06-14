@@ -1,0 +1,7 @@
+---
+apiVersion: imgpkg.carvel.dev/v1alpha1
+images:
+- annotations:
+    kbld.carvel.dev/id: index.docker.io/pingvmware/azuredisk-csi@sha256:fd5c1b01e1dc8f4d52b03be52de0bc0a11eb0169dd82086ec400bbf108ff25d6
+  image: index.docker.io/pingvmware/azuredisk-csi@sha256:fd5c1b01e1dc8f4d52b03be52de0bc0a11eb0169dd82086ec400bbf108ff25d6
+kind: ImagesLock
